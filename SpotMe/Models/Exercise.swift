@@ -10,7 +10,5 @@ import Foundation
 struct Exercise: Identifiable {
     var id = UUID()
     var exerciseTitle: String
-    var numOfSets: Int
-    var numOfReps: Int
-    var amountOfWeight: Double
+    var sets: [WorkoutSet] = []
 }

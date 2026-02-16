@@ -15,7 +15,11 @@ struct WorkoutListView: View {
                 ForEach(workouts) { workout in
                     Text(workout.workoutTitle)
                 }
-            }.navigationTitle("My Workouts")
+            }
+            .navigationTitle("My Workouts")
+            .toolbar {
+                AddWorkoutButton()
+            }
         }
     }
 }

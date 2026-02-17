@@ -13,7 +13,7 @@ struct WorkoutListView: View {
         NavigationStack {
             List {
                 ForEach(workouts) { workout in
-                    Text(workout.workoutTitle)
+                    WorkoutListRowView(workout: workout)
                 }
             }
             .navigationTitle("My Workouts")

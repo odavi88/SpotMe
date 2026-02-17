@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct AddWorkoutButton: View {
+    @State private var isPresented: Bool = false
     var body: some View {
         VStack {
             Button {
                 //
             } label: {
                 Label("", systemImage: "plus")
+            }.sheet(isPresented: $isPresented) {
+                //
             }
         }
     }

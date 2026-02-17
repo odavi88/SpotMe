@@ -12,11 +12,11 @@ struct AddWorkoutButton: View {
     var body: some View {
         VStack {
             Button {
-                //
+                isPresented = true
             } label: {
                 Label("", systemImage: "plus")
             }.sheet(isPresented: $isPresented) {
-                //
+                WorkoutInputView()
             }
         }
     }

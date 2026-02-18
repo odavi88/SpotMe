@@ -9,12 +9,11 @@ import SwiftUI
 
 struct WorkoutInputView: View {
     @Environment(\.dismiss) var dismiss
-    @State private var workoutTitleText: String = ""
-    @State private var selectedDate: Date = Date()
+    @State private var vm = WorkoutViewModel()
     var body: some View {
         VStack {
-            TextField("Workout Name...", text: $workoutTitleText).textFieldStyle(.roundedBorder)
-            DatePicker("Workout Date", selection: $selectedDate)
+            TextField("Workout Name...", text: $vm.workoutTitleText).textFieldStyle(.roundedBorder)
+            DatePicker("Workout Date", selection: $vm.selectedDate)
             Button {
                 // addWorkout()
                 dismiss()

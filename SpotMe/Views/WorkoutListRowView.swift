@@ -23,5 +23,5 @@ struct WorkoutListRowView: View {
 }
 
 #Preview {
-    WorkoutListRowView(workout: Workout(workoutTitle: "", workoutDate: .distantFuture, exercises: [Exercise(exerciseTitle: "")]))
+    WorkoutListRowView(workout: Workout(workoutTitle: "", workoutDate: .distantFuture))
 }

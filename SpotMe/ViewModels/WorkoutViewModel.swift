@@ -11,11 +11,17 @@ import Observation
 @Observable
 class WorkoutViewModel {
     var workouts: [Workout] = [
-        Workout(workoutTitle: "Workout 1", workoutDate: .now, exercises: [Exercise(exerciseTitle: "Exercise 1")]),
-        Workout(workoutTitle: "Workout 2", workoutDate: .now, exercises: [Exercise(exerciseTitle: "Exercise 1")]),
-        Workout(workoutTitle: "Workout 3", workoutDate: .now, exercises: [Exercise(exerciseTitle: "Exercise 1")]),
-        Workout(workoutTitle: "Workout 4", workoutDate: .now, exercises: [Exercise(exerciseTitle: "Exercise 1")]),
-        Workout(workoutTitle: "Workout 5", workoutDate: .now, exercises: [Exercise(exerciseTitle: "Exercise 1")])
+        Workout(workoutTitle: "Workout 1", workoutDate: .now),
+        Workout(workoutTitle: "Workout 2", workoutDate: .now),
+        Workout(workoutTitle: "Workout 3", workoutDate: .now),
+        Workout(workoutTitle: "Workout 4", workoutDate: .now),
+        Workout(workoutTitle: "Workout 5", workoutDate: .now)
     ]
+    var workoutTitleText: String = ""
+    var selectedDate: Date = Date()
+    
+    func addWorkout() {
+        
+    }
     
 }

@@ -11,5 +11,5 @@ struct Workout: Identifiable {
     var id = UUID()
     var workoutTitle: String
     var workoutDate: Date
-    var exercises: [Exercise]
+//    var exercises: [Exercise]
 }

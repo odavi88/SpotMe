@@ -13,10 +13,10 @@ struct WorkoutListRowView: View {
         HStack(alignment: .top) {
             VStack(alignment: .leading) {
                 Text(workout.workoutTitle).font(.title)
-                Text(workout.workoutDate.formatted())
+//                Text(workout.workoutDate.formatted())
             }
             Spacer()
-            Text("Exercises: 6").font(.callout)
+//            Text("Exercises: 6").font(.callout)
         }
         .padding()
     }

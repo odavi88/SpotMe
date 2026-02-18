@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct WorkoutListView: View {
-    @State private var workouts: [Workout] = []
+    @State var vm: WorkoutViewModel = WorkoutViewModel()
     var body: some View {
         NavigationStack {
             List {
-                ForEach(workouts) { workout in
+                ForEach(vm.workouts) { workout in
                     WorkoutListRowView(workout: workout)
                 }
             }
